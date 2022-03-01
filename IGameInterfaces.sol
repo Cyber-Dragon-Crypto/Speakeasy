@@ -64,3 +64,6 @@ interface IGameDashboard is IGameBase{
     );
     event BetRemoved(address _bettor, uint256 _totalBettors);
 }
+interface IGameInteractiveDashboard is IGameDashboard{
+    function placeBet(address _bettor, uint256 amount) external;
+}
